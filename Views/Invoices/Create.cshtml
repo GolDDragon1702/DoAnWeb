@@ -1,0 +1,105 @@
+﻿@model QLNS1.Models.Invoice
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    h1 {
+        color: #007bff;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .btn-primary {
+        width: auto;
+    }
+</style>
+
+<h1>Tạo hóa đơn</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="TenKhachHang" class="control-label">Tên khách hàng:</label>
+                <input asp-for="TenKhachHang" class="form-control" />
+                <span asp-validation-for="TenKhachHang" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TenSach" class="control-label">Tên sách:</label>
+                <input asp-for="TenSach" class="form-control" />
+                <span asp-validation-for="TenSach" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TheLoai" class="control-label">Thể loại:</label>
+                <input asp-for="TheLoai" class="form-control" />
+                <span asp-validation-for="TheLoai" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoLuong" class="control-label">Số lượng:</label>
+                <input asp-for="SoLuong" class="form-control" />
+                <span asp-validation-for="SoLuong" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="sdt" class="control-label">Số điện thoại:</label>
+                <input asp-for="sdt" class="form-control" />
+                <span asp-validation-for="sdt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Debt" class="control-label">Nợ:</label>
+                <br />
+                <select asp-for="Debt" class="form-control">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Tạo" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Danh sách hóa đơn</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

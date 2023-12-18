@@ -1,0 +1,83 @@
+﻿@model List<Sach>
+
+<h2>Kết quả tìm kiếm: </h2>
+
+<style>
+    .container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .card1 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .image-container {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .image1 {
+        transition: transform 3s;
+    }
+
+        .image1:hover {
+            transform: scale(1.);
+            border: 2px solid red;
+        }
+
+    .info {
+        background: white;
+        padding: 10px;
+    }
+
+    .list-group-item {
+        border: none;
+    }
+
+    .list-group-flush {
+        padding-left: 0;
+    }
+
+    h2 {
+        margin-top: 20px;
+        color: #007bff; /* Màu chữ của h2, có thể thay đổi tùy ý */
+    }
+</style>
+
+@if (Model.Count == 0)
+{
+    <p>Không có sách.</p>
+}
+else
+{
+    <section style="">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                @foreach (var o in Model)
+                {
+                    <div class="col-sm-3 mb-4">
+                        <div class="card1">
+                            <div class="container" data-mdb-ripple-color="light">
+                                <div class="image-container">
+                                    <img src="@o.Picture" class="card-img-top image1" alt="@o.Name" />
+                                </div>
+                                <div class="info">
+                                    <ul class="list-group list-group-flush text-start">
+                                        <li class="list-group-item">Tên sách: @o.Name</li>
+                                        <li class="list-group-item">Thể loại: @o.Type</li>
+                                        <li class="list-group-item">Tác giả: @o.Author</li>
+                                        <li class="list-group-item">Số lượng: @o.Amount</li>
+                                        <li class="list-group-item">Giá: @o.Price</li>
+                                    </ul>
+                                    <a asp-controller="Books" asp-action="Details"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+}

@@ -1,0 +1,163 @@
+﻿@model IEnumerable<QLNS1.Models.Invoice>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<style>
+    h1 {
+        color: #3498db;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    p {
+        text-align: center;
+        color: #555;
+    }
+
+    a {
+        transition: color 0.3s ease;
+    }
+
+        a:hover {
+            color: #e74c3c;
+        }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+        border: 1px solid #ecf0f1;
+        text-align: left;
+        padding: 12px;
+    }
+
+    th {
+        background-color: #3498db !important;
+        color: #fff;
+    }
+
+    tr:nth-child(even) {
+        background-color: #ecf0f1;
+    }
+
+    tr:hover {
+        background-color: #bdc3c7;
+    }
+
+    .action-links {
+        display: flex;
+        justify-content: center;
+    }
+
+        .action-links a {
+            margin: 0 10px !important;
+            padding: 8px 16px !important;
+            border-radius: 4px !important;
+            transition: background-color 0.3s ease, color 0.3s ease !important;
+        }
+
+            .action-links a:hover {
+                color: #fff !important;
+            }
+
+    .edit-link {
+        border: 1px solid #3498db !important;
+        color: #3498db !important;
+        background-color: #fff !important;
+    }
+
+        .edit-link:hover {
+            background-color: #3498db !important;
+        }
+
+    .details-link {
+        border: 1px solid #3498db !important;
+        color: #3498db !important;
+        background-color: #fff !important;
+    }
+
+        .details-link:hover {
+            background-color: #3498db !important;
+        }
+
+    .delete-link {
+        border: 1px solid #e74c3c !important;
+        color: #e74c3c !important;
+        background-color: #fff !important;
+    }
+
+        .delete-link:hover {
+            background-color: #e74c3c !important;
+        }
+</style>
+
+<h1>Thông tin chi tiết hóa đơn</h1>
+
+<p>
+    <a asp-action="Create">Tạo mới</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TenKhachHang)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TenSach)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TheLoai)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoLuong)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.sdt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Debt)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenKhachHang)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenSach)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TheLoai)
+                <td>
+                    @Html.DisplayFor(modelItem => item.SoLuong)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.sdt)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Gia)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Debt)
+                <td class="action-links">
+                    <a class="edit-link" asp-action="Edit" asp-route-id="@item.MaHoaDon">Chỉnh sửa</a>
+                    <a class="details-link" asp-action="Details" asp-route-id="@item.MaHoaDon">Chi tiết</a>
+                    <a class="delete-link" asp-action="Delete" asp-route-id="@item.MaHoaDon">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\QLNS1.props" />
+</Project>

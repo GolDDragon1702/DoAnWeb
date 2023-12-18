@@ -1,0 +1,173 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = QLNS1
+build_property.RootNamespace = QLNS1
+build_property.ProjectDir = C:\Users\plong\OneDrive\Documents\DoAnWeb\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\plong\OneDrive\Documents\DoAnWeb
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Areas/Identity/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/Admin/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/Invoices/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52b2ljZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/Invoices/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52b2ljZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/Invoices/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52b2ljZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/Invoices/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52b2ljZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/Invoices/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52b2ljZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/Invoices/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52b2ljZXNcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/Invoices/TongKetTien.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52b2ljZXNcVG9uZ0tldFRpZW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/NhapSaches/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhcFNhY2hlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/NhapSaches/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhcFNhY2hlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/Saches/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FjaGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/Saches/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FjaGVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/Saches/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FjaGVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/Saches/Display.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FjaGVzXERpc3BsYXkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/Saches/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FjaGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/Saches/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FjaGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/Saches/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FjaGVzXExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/Saches/TongKet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FjaGVzXFRvbmdLZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/Shared/_Manager.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NYW5hZ2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/ThuTiens/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1VGllbnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/ThuTiens/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1VGllbnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/ThuTiens/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1VGllbnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/ThuTiens/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1VGllbnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/ThuTiens/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1VGllbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/plong/OneDrive/Documents/DoAnWeb/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-bdpwwmh1vx

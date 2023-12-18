@@ -1,0 +1,92 @@
+﻿@model QLNS1.Models.Sach
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    h1 {
+        color: #007bff;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .btn-primary {
+        width: auto;
+    }
+</style>
+
+<h1>Chỉnh sửa sách</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div class="form-group col-3">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+            </div>
+            <div class="form-group col-3">
+                <label asp-for="Author" class="control-label"></label>
+                <input asp-for="Author" class="form-control" />
+            </div>
+            <div class="form-group col-3">
+                <label asp-for="Type" class="control-label"></label>
+                <input asp-for="Type" class="form-control" />
+            </div>
+            <div class="form-group col-3">
+                <label asp-for="Amount" class="control-label"></label>
+                <input asp-for="Amount" class="form-control" />
+            </div>
+            <div class="form-group col-3">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+            </div>
+            <div class="form-group col-3">
+                <label asp-for="Picture" class="control-label"></label>
+                <input asp-for="Picture" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Lưu" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Danh sách chi tiết</a>
+</div>
+
+

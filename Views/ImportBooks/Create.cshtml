@@ -1,0 +1,90 @@
+﻿@model QLNS1.Models.NhapSach
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    h1 {
+        color: #007bff;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .mb-3 {
+        margin-bottom: 15px;
+    }
+</style>
+
+<h1>Nhập sách</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" method="post">
+            <table id="AddSach">
+                <tr>
+                    <td>
+                        <div class="form-group pe-2">
+                            <label asp-for="TenSach" class="control-label">Tên sách:</label>
+                            <input asp-for="TenSach" class="form-control" />
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group pe-2">
+                            <label asp-for="TacGia" class="control-label">Tác giả:</label>
+                            <input asp-for="TacGia" class="form-control" />
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group pe-2">
+                            <label asp-for="TheLoai" class="control-label">Thể loại:</label>
+                            <input asp-for="TheLoai" class="form-control" />
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group pe-2">
+                            <label asp-for="AmountImport" class="control-label">Số lượng:</label>
+                            <input asp-for="AmountImport" class="form-control" />
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <hr />
+            <span asp-validation-for="AmountImport" class="text-danger"></span>
+            <br />
+            <button type="submit" class="btn btn-primary mb-3">Nhập sách</button>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Danh sách chi tiết</a>
+</div>

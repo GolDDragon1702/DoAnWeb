@@ -1,0 +1,115 @@
+﻿@model QLNS1.Models.Invoice
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f8f9fa;
+        color: #495057;
+    }
+
+    h1 {
+        color: #007bff;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    hr {
+        border: 2px solid #007bff;
+        margin: 20px 0;
+    }
+
+    dl.row {
+        margin-bottom: 20px;
+    }
+
+    dt {
+        font-weight: bold;
+        color: #343a40;
+    }
+
+    dd {
+        margin-left: 0;
+    }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+    .action-links {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+        .action-links a {
+            margin: 0 10px;
+            padding: 8px 16px;
+            border: 2px solid #007bff;
+            border-radius: 4px;
+            color: #007bff;
+            background-color: #fff;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+            .action-links a:hover {
+                background-color: #007bff;
+                color: #fff;
+            }
+</style>
+
+<h1>Chi tiết hóa đơn</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TenKhachHang)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TenKhachHang)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TenSach)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TenSach)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TheLoai)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TheLoai)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SoLuong)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SoLuong)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Gia)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Gia)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.MaHoaDon">Chỉnh sửa</a> |
+    <a asp-action="Index">Danh sách hóa đơn</a>
+</div>

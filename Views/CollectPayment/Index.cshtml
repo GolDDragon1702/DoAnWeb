@@ -1,0 +1,164 @@
+﻿@model IEnumerable<QLNS1.Models.ThuTien>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<style>
+    h1 {
+        color: #3498db;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    p {
+        text-align: center;
+        color: #555;
+    }
+
+    a {
+        color: #3498db;
+        text-decoration: none;
+        margin-right: 10px;
+        transition: color 0.3s ease;
+    }
+
+        a:hover {
+            color: #e74c3c;
+        }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+        border: 1px solid #ecf0f1;
+        text-align: left;
+        padding: 12px;
+    }
+
+    th {
+        background-color: #3498db !important;
+        color: #fff;
+    }
+
+    tr:nth-child(even) {
+        background-color: #ecf0f1;
+    }
+
+    tr:hover {
+        background-color: #bdc3c7;
+    }
+
+    .action-links {
+        display: flex;
+        justify-content: center;
+    }
+
+        .action-links a {
+            margin: 0 10px;
+            padding: 8px 16px;
+            border: 1px solid #3498db;
+            border-radius: 4px;
+            color: #3498db;
+            background-color: #fff;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+            .action-links a:hover {
+                background-color: #3498db;
+                color: #fff;
+            }
+
+    .edit-link {
+        border: 1px solid #3498db !important;
+        color: #3498db !important;
+        background-color: #fff !important;
+    }
+
+        .edit-link:hover {
+            background-color: #3498db !important;
+        }
+
+    .details-link {
+        border: 1px solid #3498db !important;
+        color: #3498db !important;
+        background-color: #fff !important;
+    }
+
+        .details-link:hover {
+            background-color: #3498db !important;
+        }
+
+    .delete-link {
+        border: 1px solid #e74c3c !important;
+        color: #e74c3c !important;
+        background-color: #fff !important;
+    }
+
+        .delete-link:hover {
+            background-color: #e74c3c !important;
+        }
+</style>
+<h1>Danh sách phiếu thu</h1>
+
+<p>
+    <a asp-action="Create">Tạo mới</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.HoTen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DiaChi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoDienThoai)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgayThu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoTienThu)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.HoTen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiaChi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoDienThoai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgayThu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoTienThu)
+            </td>
+            <td class="action-links">
+                <a class="edit-links" asp-action="Edit" asp-route-id="@item.IdThuTien">Chỉnh sửa</a>
+                <a class="details-link" asp-action="Details" asp-route-id="@item.IdThuTien">Chi tiết</a>
+                <a class="delete-link" asp-action="Delete" asp-route-id="@item.IdThuTien">Xóa</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
